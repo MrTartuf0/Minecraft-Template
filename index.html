@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Template</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Immagine di sfondo -->
+    <div class="mc-bg"><img src="mc-background.png" alt="Minecraft Background Image" height="100%" id="mc-bg"></div>
+    
+    <!-- Navbar -->
+    <nav>
+        <div class="menu-button">
+            <div class="top-line"></div>
+            <div class="middle-line"></div>
+            <div class="bottom-line"></div>
+        </div>
+    </nav>
+    
+    <!-- Maschera di colore gradiente -->
+    <div class="bg-color-gradient"></div>
+    
+    <!-- Container flessibile -->
+    <div class="content">
+
+        <!-- Sezione a sinistra -->
+        <div class="left-content">
+            <img src="hyperlabs-logo.png" alt="Hyperlabs Logo" class="hyperlabs-logo">
+
+            <!-- Titolo -->
+            <p class="title">A new way to play and enjoy your <span>Minecraft</span> session.</p>
+
+            <!-- Button -->
+            <button class="playNameServer">play.yourserver.com</button>
+
+            <!-- Horizontal Rule -->
+            <div class="hrv"></div>
+
+            <!-- Sotto-titolo -->
+            <div class="discover">
+                <p class="sub-title">Discover now <span>Yourserver</span></p>
+                <img src="right-arrow.svg" alt="right-arrow" class="right-arrow" width="12px">
+            </div>
+
+            <!-- Paragrafo -->
+            <p class="paragraph"> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit lorem volutpat ornare 
+                vitae consequat adipiscing egestas et dictum. Ut eget mattis semper consectetur justo 
+                egestas. Nulla consectetur sociis urna eget mi ut suscipit augue diam. Sapien arcu amet nunc vitae sed.
+            </p>
+
+        </div>
+        
+        
+        <!-- Sezione a destra -->
+        <div class="right-content">
+
+            <!-- Griglia -->
+            <div class="blocks">
+
+                <div class="b1"></div>
+                <div class="b2"></div>
+                <div class="b3"></div>
+                <div class="b4"></div>
+
+            </div>
+
+        </div>
+    </div>
+    
+    <script>
+        function gradientWidth () {
+            let lunghezzaSfondo = document.querySelector("#mc-bg").clientWidth;
+            document.querySelector(".bg-color-gradient").style.width = `${lunghezzaSfondo}px`;
+        }
+
+        window.onload = gradientWidth();
+        window.onresize = gradientWidth(); 
+    </script>
+</body>
+</html>
