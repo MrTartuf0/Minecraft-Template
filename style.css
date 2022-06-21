@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* VARIABLES */
+@media screen and (min-width: 600px) {
+    :root {
+      --multiplier: 1.25;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    :root {
+      --multiplier: 0.9;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -28,33 +41,33 @@ button{
 
 nav{
     width: 100vw;
-    height: 92px;
+    height: calc(92px * var(--multiplier));
     position: relative;
     top: 0px;
     z-index: 2;
 }
 
 .menu-button{
-    padding: 42px 0 0 82px;
+    padding: calc(42px * var(--multiplier)) 0 0 calc(82px * var(--multiplier));
     width: 28px;
 }
 
 .menu-button > *{
-    border: 1px solid white;
-    border-radius: 100px;
+    border: calc(1px * var(--multiplier)) solid white;
+    border-radius: calc(100px * var(--multiplier));
 }
 
 .bottom-line{
-    width: 28px;
+    width: calc(28px * var(--multiplier));
 }
 
 .top-line{
-    width: 28px;
+    width: calc(28px * var(--multiplier));
 }
 
 .middle-line{
-    width: 21px;
-    margin: 6px 0;
+    width: calc(21px * var(--multiplier));
+    margin: calc(6px * var(--multiplier)) 0;
 }
 
 .bg-color-gradient{
@@ -69,16 +82,16 @@ nav{
 .content{
     position: relative;
     width: 100vw;
-    height: calc(100vh - 96px);
+    height: calc(100vh - calc(96px * var(--multiplier)));
     display: flex;
-    padding: 0 145px 0 82px;
+    padding: 0 calc(145px * var(--multiplier)) 0 calc(82px * var(--multiplier));
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .left-content{
-    padding: 38px 0 0 0;
-    width: max(525px);
+    padding: calc(38px * var(--multiplier)) 0 0 0;
+    width: max(calc(525px * var(--multiplier)));
 }
 
 .right-content{
@@ -87,16 +100,16 @@ nav{
 }
 
 .hyperlabs-logo{
-    height: 115px;
-    padding: 0 0 24px 0;
+    height: calc(115px * var(--multiplier));
+    padding: 0 0 calc(24px * var(--multiplier)) 0;
 }
 
 .title{
     font-weight: 600;
-    font-size: 36px;
-    line-height: 54px;
+    font-size: calc(36px * var(--multiplier));
+    line-height: calc(54px * var(--multiplier));
     color: white;
-    padding: 0 0 18px 0;
+    padding: 0 0 calc(18px * var(--multiplier)) 0;
 }
 
 .title span{
@@ -104,35 +117,35 @@ nav{
 }
 
 .playNameServer{
-    padding: 4px 24px;
+    padding: calc(4px * var(--multiplier)) calc(24px * var(--multiplier));
     color: #27DB24;
     border-radius: 100vw;
-    border: 1px solid #27DB24;
+    border: calc(1px * var(--multiplier)) solid #27DB24;
     background-color: rgba(39, 219, 36, 0.15);
-    margin: 0 0 48px 0;
-    font-size: 16px;
-    line-height: 24px;
+    margin: 0 0 calc(48px * var(--multiplier)) 0;
+    font-size: calc(16px * var(--multiplier));
+    line-height: calc(24px * var(--multiplier));
     font-weight: 400;
 }
 
 .hrv{
     width: 100%;
-    height: 2px;
+    height: calc(2px * var(--multiplier));
     border-radius: 100vw;
     background-color:rgba(255, 255, 255, 0.25);
 }
 
 .discover{
     display: flex;
-    padding: 28px 0 12px 0;
+    padding: calc(28px * var(--multiplier)) 0 calc(12px * var(--multiplier)) 0;
 }
 
 .sub-title{
     color: white;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: calc(18px * var(--multiplier));
+    line-height: calc(27px * var(--multiplier));
     font-weight: 400;
-    padding: 0 14px 0 0;
+    padding: 0 calc(14px * var(--multiplier)) 0 0;
 }
 
 .sub-title span{
@@ -141,33 +154,33 @@ nav{
 
 .paragraph{
     color: rgba(255, 255, 255, 0.75);
-    font-size: 14px;
+    font-size: calc(14px * var(--multiplier));
     font-weight: 300;
-    word-spacing: 0.5px;
-    padding: 0 0 100px 0;
+    word-spacing: calc(0.5px * var(--multiplier));
+    padding: 0 0 calc(100px * var(--multiplier)) 0;
 }
 
 .blocks{
     display: grid;
-    grid-template-columns: repeat(3 , 128px);
-    grid-template-rows: repeat(4 , 128px);
-    gap: 12px;
+    grid-template-columns: repeat(3 , calc(128px * var(--multiplier)));
+    grid-template-rows: repeat(4 , calc(128px * var(--multiplier)));
+    gap: calc(12px * var(--multiplier));
 }
 
 .blocks > * {
     background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(25px);
-    border-radius: 18px;
+    backdrop-filter: blur(calc(25px * var(--multiplier)));
+    border-radius: calc(18px * var(--multiplier));
 }
 
 .blocks .b1, .blocks .b4{
-    width: 256px;
-    height: 256px;
+    width: calc(256px * var(--multiplier));
+    height: calc(256px * var(--multiplier));
 }
 
 .blocks .b2, .blocks .b3{
-    width: 128px;
-    height: 128px;
+    width: calc(128px * var(--multiplier));
+    height: calc(128px * var(--multiplier));
 }
 
 .b1{
