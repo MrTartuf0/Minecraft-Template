@@ -1,2 +1,2 @@
 # Minecraft-Template
-A responsive design made in Figma and written CSS
+A responsive design made in Figma and than written in CSS
